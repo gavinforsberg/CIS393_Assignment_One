@@ -13,12 +13,16 @@
 <body>
 <div id="wrapper">
   <header>
-    <h1>BU Adventure Club Register!</h1>
+    <h1>BU Adventure Club Register!
+    <a href = "https://www.instagram.com/braves_adventureclub/" target = "_self">
+	<img src="images/logo.png"width="75" height="75" border="0">
+	</a>
+</h1>
     <nav>
       <h2 id="menulink"><a href="#navlinks">Menu</a></h2>
       <ul class="displayed" id="navlinks">
         <li><a href="BUAC.html">Home</a></li>
-        <li><a href="Adventures.html">Sights</a></li>
+        <li><a href="Adventures.html">Adventures</a></li>
         <li><a href="AC_login.html">LogIn</a></li>
          <li><a href="AC_Register.html" class="thispage">Register</a></li>
       </ul>
@@ -27,11 +31,13 @@
 
 <body>
 <p>Please fill out this form to register.</p>
+<img src="images/tent.JPG" width="500px" height="400px" align="right">
 
-<form action="https://playground.bradley.edu/~jiangbo/cgi-bin/form_echo.cgi" method="POST">
+
+<form action="cgi-bin/AC_register.cgi" method="POST">
 <p>
 </p><h3>Input Tag</h3>
-Text field (Name): <input type="text" name="username" value="username" size="20" maxlength="20">
+Text field (Name): <input type="text" name="username" value="Name" size="20" maxlength="20">
 
 <p>Checkboxes: <br>
 <input type="checkbox" name="toppings" value="lettuce"> Lettuce<br>
