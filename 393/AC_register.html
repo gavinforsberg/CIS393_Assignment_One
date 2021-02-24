@@ -24,54 +24,56 @@
         <li><a href="BUAC.html">Home</a></li>
         <li><a href="Adventures.html">Adventures</a></li>
         <li><a href="AC_login.html">LogIn</a></li>
-         <li><a href="AC_Register.html" class="thispage">Register</a></li>
+         <li><a href="AC_register.html" class="thispage">Register</a></li>
       </ul>
     </nav>
   </header>
 
 <body>
 <p>Please fill out this form to register.</p>
-<img src="images/tent.JPG" width="500px" height="400px" align="right">
+<img src="images/tent.JPG" width="500px" height="400px" align="right" >
 
 
 <form action="cgi-bin/AC_register.cgi" method="POST">
 <p>
 </p><h3>Input Tag</h3>
-Text field (Name): <input type="text" name="username" value="Name" size="20" maxlength="20">
+Name: <br><input type="text" name="username" value="Name" size="20" maxlength="20" >
+<br>
+Email:<br> <input type="text" name="email" value="Email" size="20" maxlength="20">
+<br>
+Student ID:<br> <input type="text" name="studentID" value="ID#" size="20" maxlength="20">
 
-<p>Checkboxes: <br>
-<input type="checkbox" name="toppings" value="lettuce"> Lettuce<br>
-<input type="checkbox" name="toppings" value="tomato"> Tomato<br>
-<input type="checkbox" name="toppings" value="onion"> Onion<br></p>
+<p>Weekdays Available for Meetings at 1:00 PM: <br>
+<input type="checkbox" name="availability" value="Monday"> Monday<br>
+<input type="checkbox" name="availability" value="Tuesday"> Tuesday<br>
+<input type="checkbox" name="availability" value="Wednesday"> Wednesday<br>
+<input type="checkbox" name="availability" value="Thursday"> Thursday<br>
+<input type="checkbox" name="availability" value="Friday"> Friday<br></p>
 
-<p>Radio buttons: <br>
-<input type="radio" name="bread" value="wheat" checked=""> Wheat<br>
-<input type="radio" name="bread" value="white"> White<br>
-<input type="radio" name="bread" value="rye"> Rye<br></p>
-<p>
 
-</p><h3>Select Tag</h3>
-Menu: Choose a method of payment: 
-<br><select name="credit_card" size="1">
-  <option selected="">American Express</option>
-  <option>Discover</option>
-  <option>Master Card</option>
-  <option>Visa</option>
+<p>Graduation Year: <br>
+<input type="radio" name="year" value="2020" checked=""> 2020<br>
+<input type="radio" name="year" value="2021"> 2021<br>
+<input type="radio" name="year" value="2022"> 2022<br></p>
+Do you live on campus?: 
+<br><select name="livson" size="1">
+  <option selected="">On Campus</option>
+  <option>Remote</option>
+  <option>Commuter</option>
 </select>
 
-<p>Scrolling box: Choose the activities you enjoy: 
+<p>Choose the activities you enjoy (hold control to select more than one): 
 <br><select name="activity" size="4" multiple="">
-  <option>Aerobics</option>
-  <option>Aikido</option>
-  <option>Basketball</option>
+  <option>Horseback Riding</option>
+  <option>Rock Climbing</option>
   <option>Bicycling</option>
-  <option>Golfing</option>
+  <option>Running/Walking</option>
   <option>Hiking</option>
 </select>
 </p><p></p>
 
 <p>
-TextArea Tag:
+Suggestions for events or other things we should know about you:
 <br><textarea rows="10" cols="40" name="comments" wrap="virtual">Your comments</textarea>
 </p>
 
@@ -80,6 +82,6 @@ TextArea Tag:
 
 </form>
 
-
+ <script type="text/javascript" src="js/menu.js"></script> 
 
 </body></html>
