@@ -29,7 +29,7 @@ if($login eq "success")
 {		
 #	print $cgi->redirect('../');
 	displayOtherHTMLPage($cgi);
-	print("<meta http-equiv='refresh' content='2;url=../' />");
+	print("<meta http-equiv='refresh' content='2;url=../BUAC.html' />");
 
 }
 else
